@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+    /*Brand*/
+    --blue-dark: #2E3DA3;
+    --blue-base: #5165E1;
+    --blue-light: #8996EB;
+
+    /*Grayscale*/
+    --gray-100: #151619;
+    --gray-200: #1E2024;
+    --gray-300: #535964;
+    --gray-400: #858B99;
+    --gray-500: #E3E5E8;
+    --gray-600: #F9FAFA;
+
+    /*Feedback*/
+    --feedback-danger: #D03E3E;
+    --feedback-open: #CC3D6A;
+    --feedback-progress: #355EC5;
+    --feedback-done: #508B26;
+
+    /* Font family */
+    --font-family-base: 'Lato', sans-serif;
+
+}
+
+/* Sua classe personalizada */
+.bg-blue-dark {
+  background-color: var(--blue-dark);
+}
+
+.text-blue-dark {
+  color: var(--blue-dark);
+}
+
+.text-gray-400 {
+  color: var(--gray-400);
+}
+
+.text-gray-600 {
+    color: var(--gray-600);
+}
+
+.bg-gray-100 {
+    background-color: var(--gray-100);
+}
+
+.bg-gray-200 {
+  background-color: var(--gray-200);
+}
+
+.text-blue-light {
+  color: var(--blue-light);
+}
+
+.bg-feedback-open {
+  background-color: var(--feedback-open);
+}
+
+.text-feedback-open {
+  color: #A3234B;
+}
+
+.bg-feedback-progress {
+  background-color: var(--feedback-progress);
+}
+
+.text-feedback-progress {
+  color: #1976D2;
+}
+
+.bg-feedback-done{
+  background-color: var(--feedback-done);
+}
+
+.text-feedback-done {
+  color: #388E3C;
+}
+
+
+
