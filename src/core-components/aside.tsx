@@ -26,7 +26,7 @@ export default function SideBar({className, variant,children, ...props}: AsidePr
     return(
         <Container as="aside" className={cx(asideVariants({variant}), className)} {...props}>
             {children}
-            <nav className="flex flex-col">
+            <nav className="hidden md:flex flex-col">
                 <NavItem icon={ClipboardList}>Chamados</NavItem>
                 <NavItem icon={Users} variant="active">Técnicos</NavItem>
                 <NavItem icon={BriefcaseBusiness}>Clientes</NavItem>
