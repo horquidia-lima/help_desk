@@ -6,7 +6,7 @@ export default function App() {
   return (
     <Container as="div" className="bg-gray-100 flex flex-col md:flex-row min-h-screen">
         <SideBar className="px-4">
-          <Header className="py-6 px-5 hidden md:flex"/>
+          <Header className="py-1 px-5 hidden md:flex"/>
           <div className=""></div>
         </SideBar>
 

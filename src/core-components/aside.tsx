@@ -7,7 +7,7 @@ import Avatar from "../components/avatar";
 import Text from "../components/text";
 
 
-const asideVariants = cva("flex flex-col h-screen", {
+const asideVariants = cva("flex flex-col md:justify-between py-3", {
     variants: {
         variant: {
             desktop: "w-[200px]",
@@ -27,8 +27,9 @@ interface AsideProps extends React.HTMLAttributes<HTMLElement>,
 export default function SideBar({className, variant,children, ...props}: AsideProps){
     return(
         <Container as="aside" className={cx(asideVariants({variant}), className)} {...props}>
-            {children}
-            <div className="flex flex-1 flex-col justify-between">
+            
+            <div className="flex flex-1 flex-col md:justify-between">
+                {children}
                 <nav className="hidden md:flex flex-col">
                     <NavItem icon={ClipboardList}>Chamados</NavItem>
                     <NavItem icon={Users} variant="active">Técnicos</NavItem>
