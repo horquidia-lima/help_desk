@@ -35,7 +35,7 @@ export default function Header({className}: HeaderProps){
                 </div>
             </div>
 
-            <Avatar className="md:hidden"/>
+            <Avatar className="md:hidden w-10 h-10"/>
 
             {/* Menu mobile dropdown */}
             {open && (
